@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+
+		var currentLanguage = "en";
+		
+		function isSmallScreen(){
+			if ((screen.width < 480) || (screen.height < 480)) {
+				return true;
+			}
+			return false;
+		}
+		
+		function redirection(){
+			var loc = window.location.href;
+			var path = "entry/" + loc.split("entry/")[1];
+			var newLoc = false;
+			if(isSingular) {
+				newLoc = rootUrl + "#/" + path;
+			} 
+			if(newLoc && !isSmallScreen()){
+				window.location.href = newLoc;
+			}
+		}
+		
+		redirection();
+		
+		function preloadCssImages() {
+			var imgs = ["bm-ui.png","bm-ui-x2.png","loader-black-40.gif"];
+			var iterate = function (i) {
+				if (imgs.length > i) {
+					var img = new Image();
+					img.src = 'img/' + imgs[i];
+					//console.log("loading: " + img.src);
+					img.onLoad = function () {
+						iterate(i + 1);
+					}();
+				};
+			};
+			if(imgs.length) iterate(0);
+		};
+		preloadCssImages();
+	</script>
+	
+		
+	<title>Bernie Rebolledo | Electronic Engineer</title>
+	
+	<!-- Site Meta -->
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Bernie" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- /Site Meta -->
+	
+	<!-- Open Graph Meta -->
+	<meta property="og:url" content="http://bernierebolledo.com" />
+	<meta property="og:site_name" content="BERNIE REBOLLEDO" />
+	<meta property="og:title" content="BERNIE REBOLLEDO" />
+	<meta property="og:type" content="article" />
+	<meta property="og:description" content="Electronic Engineer" />
+	<!-- /Open Graph Meta -->
+	
+	<link rel="icon" href="" type="image/png" />
+	
+	<link rel='stylesheet' id='royalslider-css'  href='style/royalslider.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='royalslider-theme-css'  href='style/rs-default.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='scrollbox-css'  href='style/jquery.scrollbox.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='base-css'  href='style/base.css' type='text/css' media='all' />
+
+	<script type='text/javascript' src='js/jquery.js'></script>
+	<script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+	<script type='text/javascript' src='js/skrollr.min.js'></script>
+
+	<meta http-equiv="Content-Language" content="en-US" />
+
+</head>
+<body class="home blog">
+	<div id="wrap" class="show-if-no-js">
+		<nav class="projects-nav">
+			<ul>
+				<li class="ui-button close-project"><span class="ui"><br /></span></li>
+				<li class="ui-button prev-project"><span class="ui"><br /></span></li>
+				<li class="ui-button next-project"><span class="ui"><br /></span></li>
+				<li class="ui-button scroll-project"><span class="ui"><br /></span></li>
+				<li class="ui-button loading-project"><span class="ui"><br /></span></li>
+			</ul>
+		</nav>
+		
+		<header id="splash">
+				<div class="b09-dark-overlay"><br /></div>
+				<div class="background no-select">
+					<a class='src rsImg' href='img/b1.jpg'></a>
+					<a class='src rsImg' href='img/b2.jpg'></a>
+					<a class='src rsImg' href='img/b3.jpg'></a>
+					<a class='src rsImg' href='img/b4.jpg'></a>
+					<a class='src rsImg' href='img/b5.jpg'></a>
+				</div>
+				<div class="header-text">
+					<h1 class="site-title">BERNIE REBOLLEDO</h1>
+					<div class='sub-site-title'>Electronic Engineer & Full Stack Web Developer</div>
+				</div>
+				
+				<div class="buttons">
+					<div class="buttons-inner">
+						<div class="button button-primary view-projects no-select">curriculum vitae</div>
+					</div>
+				</div>
+		</header>
+		
+		<section id="entries">
+			<div id="entries-inner">
+							
+				<article class='entry' id='entry-998' data-slug='telotengo'>
+					<div class='entry-inner'>
+						
+						<header>
+							<a class='permalink' href='/entry/telotengo/'>
+								<h2 ><span class='the-title'>TeloTengo</span><span class='the-metadata'> / web design & dev</span></h2>
+							</a>
+						</header><!-- /header -->
+						<div class="entry-content">
+							<div class="description">
+								<p>It is a social network of services in development.</p><br />
+								Client: <p>Bernie Rebolledo - Personal Project
+								</p><br />
+								Development:
+								<p>Ruby on Rails, Bootstrap, jQuery.</p><br />
+								Further info at: <a title="TeloTengo" href="http://telotengo.herokuapp.com" target="_blank">telotengo.com.co</a></p>
+							</div> <!-- /description -->
+							<div class="images">
+								<div class="image">
+									<a class="src rsImg no-select" href="img/telotengo.png">
+										
+									</a>
+									<div class="caption">
+																			</div>
+								</div>												
+							</div>
+						</div> <!-- /entry-content -->
+					</div><!-- /entry-inner -->
+				</article>
+			
+				<article class='entry' id='entry-782' data-slug='adminplus'>
+					<div class='entry-inner'>
+						
+						<header>
+							<a class='permalink' href='/entry/adminplus/'>
+								<h2 ><span class='the-title'>AdminPlus</span><span class='the-metadata'> / web design & dev</span></h2>
+							</a>
+						</header><!-- /header -->
+						<div class="entry-content">
+							<div class="description">
+								<p>AdminPlus specializes in residential property management. Regardless of how many rental homes you own, AdminPlus’s strategy is designed to save you money at every stage of the process, so our property management service pays for itself.</p><br />
+								Client: <p>Bernie Rebolledo - Personal Project
+								</p><br />
+								Development:
+								<p>Single Page App, Bootstrap, jQuery.</p><br />
+								Further info at: <a title="AdminPlus" href="http://www.adminplus.com.co" target="_blank">adminplus.com.co</a></p>
+							</div> <!-- /description -->
+							<div class="images">
+								<div class="image">
+									<a class="src rsImg no-select" href="img/adminplus.png"></a>
+									<div class="caption"></div>
+								</div>
+								<div class="image">
+									<a class="src rsImg no-select" href="img/adminplus2.png"></a>
+									<div class="caption"></div>
+								</div>													
+							</div>
+						</div> <!-- /entry-content -->
+					</div><!-- /entry-inner -->
+				</article>
+			<article class='entry' id='' data-slug='joyglobal'>
+					<div class='entry-inner'>
+						
+						<header>
+							<a class='permalink' href='/entry/joyglobal/'>
+								<h2 ><span class='the-title'>E McAllister SAS</span><span class='the-metadata'> / service engineer</span></h2>
+							</a>
+						</header><!-- /header -->
+						<div class="entry-content">
+							<div class="description">
+								<p>Soporte técnico (Troubleshooting) y mantenimiento palas eléctricas P&H XPC 2800 en la flota de Cerrejón. Dirección y manejo de ensamble XPC 28207 Pala 29 (Supervisor eléctrico) en Cerrejón. Se adquieren conocimientos básicos en los diferentes procesos de la minería del carbón: explotación, producción, beneficio, transformación y transporte del mineral.</p>
+								Date: <p>Enero 2013 - Agosto 2014
+								</p>
+								Contact:
+								<p>(57-1) 676 2177</p>
+								Further info at: <a title="JoyGlobal" href="http://http://www.joyglobal.com/" target="_blank">joyglobal.com</a></p>
+							</div> <!-- /description -->
+							<div class="images">
+								<div class="image">
+									<a class="src rsImg no-select" href=""></a>
+									<div class="caption"></div>
+								</div>
+								<div class="image">
+									<a class="src rsImg no-select" href=""></a>
+									<div class="caption"></div>
+								</div>													
+							</div>
+						</div> <!-- /entry-content -->
+					</div><!-- /entry-inner -->
+				</article>
+				<article class='entry' id='' data-slug='ppi'>
+					<div class='entry-inner'>
+						
+						<header>
+							<a class='permalink' href='/entry/ppi/'>
+								<h2 ><span class='the-title'>PPI</span><span class='the-metadata'> / resident project engineer</span></h2>
+							</a>
+						</header><!-- /header -->
+						<div class="entry-content">
+							<div class="description">
+								<p>Dirección y manejo de proyecto de ingeniería para el mantenimiento e instalación de estructuras metálicas.</p><br />
+								Date: <p>Mayo 2012 - Diciembre 2012
+								</p><br />
+								Contact:
+								<p>(57-5) 3024747</p><br />
+							</div> <!-- /description -->
+							<div class="images">
+								<div class="image">
+									<a class="src rsImg no-select" href="img/"></a>
+									<div class="caption"></div>
+								</div>
+								<div class="image">
+									<a class="src rsImg no-select" href="img/"></a>
+									<div class="caption"></div>
+								</div>													
+							</div>
+						</div> <!-- /entry-content -->
+					</div><!-- /entry-inner -->
+				</article>
+				<article class='entry' id='' data-slug='ffmh'>
+					<div class='entry-inner'>
+						
+						<header>
+							<a class='permalink' href='/entry/ffmh/'>
+								<h2 ><span class='the-title'>Factor+Humano</span><span class='the-metadata'> / resident project engineer </span></h2>
+							</a>
+						</header><!-- /header -->
+						<div class="entry-content">
+							<div class="description">
+								<p>Dirección, manejo e administración de proyecto “Patria Mía”, construcción de casas modelo.</p><br />
+								Date: <p>Enero 2012 - Abril 2012
+								</p><br />
+								Contact:
+								<p>+57 311 414 1928</p><br />
+								
+							</div> <!-- /description -->
+							<div class="images">
+								<div class="image">
+									<a class="src rsImg no-select" href="img/"></a>
+									<div class="caption"></div>
+								</div>
+								<div class="image">
+									<a class="src rsImg no-select" href="img/"></a>
+									<div class="caption"></div>
+								</div>													
+							</div>
+						</div> <!-- /entry-content -->
+					</div><!-- /entry-inner -->
+				</article>
+				<article class='entry' id='' data-slug='ppi2'>
+					<div class='entry-inner'>
+						
+						<header>
+							<a class='permalink' href='/entry/ppi2/'>
+								<h2 ><span class='the-title'>PPI</span><span class='the-metadata'> / project manager</span></h2>
+							</a>
+						</header><!-- /header -->
+						<div class="entry-content">
+							<div class="description">
+								<p>Administración de proyectos varios de ingeniería elaborados por la empresa.</p><br />
+								Date: <p>Mayo 2012 - Diciembre 2012
+								</p><br />
+								Contact:
+								<p>(57-5) 3024747</p><br />
+							</div> <!-- /description -->
+							<div class="images">
+								<div class="image">
+									<a class="src rsImg no-select" href="img/"></a>
+									<div class="caption"></div>
+								</div>
+								<div class="image">
+									<a class="src rsImg no-select" href="img/"></a>
+									<div class="caption"></div>
+								</div>													
+							</div>
+						</div> <!-- /entry-content -->
+					</div><!-- /entry-inner -->
+				</article>
+				<article class='entry' id='' data-slug='schaller'>
+					<div class='entry-inner'>
+						
+						<header>
+							<a class='permalink' href='/entry/schaller/'>
+								<h2 ><span class='the-title'>Schaller</span><span class='the-metadata'> / project manager</span></h2>
+							</a>
+						</header><!-- /header -->
+						<div class="entry-content">
+							<div class="description">
+								<p>Se realizó diseño e implementación de inventario digital en el tiempo estipulado.</p><br />
+								Date: <p>Abril 2011 - Junio 2011
+								</p><br />
+								Contact:
+								<p>(57-5) 3562729</p><br />
+							</div> <!-- /description -->
+							<div class="images">
+								<div class="image">
+									<a class="src rsImg no-select" href="img/"></a>
+									<div class="caption"></div>
+								</div>
+								<div class="image">
+									<a class="src rsImg no-select" href="img/"></a>
+									<div class="caption"></div>
+								</div>													
+							</div>
+						</div> <!-- /entry-content -->
+					</div><!-- /entry-inner -->
+				</article>
+				<article class='entry' id='' data-slug='tecnomovil'>
+					<div class='entry-inner'>
+						
+						<header>
+							<a class='permalink' href='/entry/tecnomovil/'>
+								<h2 ><span class='the-title'>Tecnomóvil SA</span><span class='the-metadata'> / vas asesor</span></h2>
+							</a>
+						</header><!-- /header -->
+						<div class="entry-content">
+							<div class="description">
+								<p>Se realizó capacitación a personal de ventas de diferentes puntos TIGO de la ciudad.</p><br />
+								Date: <p>Junio 2010 - Agosto 2010
+								</p><br />
+								Contact:
+								<p>(57-5) 3660467</p><br />
+							</div> <!-- /description -->
+							<div class="images">
+								<div class="image">
+									<a class="src rsImg no-select" href="img/"></a>
+									<div class="caption"></div>
+								</div>
+								<div class="image">
+									<a class="src rsImg no-select" href="img/"></a>
+									<div class="caption"></div>
+								</div>													
+							</div>
+						</div> <!-- /entry-content -->
+					</div><!-- /entry-inner -->
+				</article>
+		</section>
+		
+		<div id="footer">
+			<div class="b09-dark-overlay"><br /></div>
+			<div class="background">
+				<a class='rsImg' href='http://bjoernmeier.com/cms/wp-content/uploads/2013/07/Etcetc-2.jpg'></a>
+			</div>
+			<div class="footer-text">
+				<div class="columns">
+											<div class="column column-1">
+								<div class="column-inner">
+																	<section class="element">
+										<header>
+											<h2>Contact</h2>
+										</header>
+										
+										<div class="element-body">
+											<p>Bernardo Luis Rebolledo Quijano<br />
+											<!-- Calle 66 # 63 - 30 Apto 8C<br /> -->
+											Barranquilla<br />
+											Colombia</p>
+											<p>Celular <a href="tel:+57 316 878 7115">+57 316 878 7115</a><br />
+											<a href="mailto:bl.rebolledo@gmail.com">bl.rebolledo@gmail.com</a></p>
+										</div>
+									</section>
+																</div>
+							</div>
+												<div class="column column-2">
+								<div class="column-inner">
+																	<section class="element">
+										<header>
+											<h2>About</h2>
+										</header>
+										
+										<div class="element-body">
+											<div title="Page 10">
+										<div>
+										<div>
+										<p>Ingeniero Electrónico, poseo alto compromiso ético, orientado a resultados,
+
+										facilidad para trabajar en equipo, con formación y entrenamiento para 
+
+										gestionar de manera eficiente el desarrollo, direccionamiento y control de los 
+
+										sistemas eléctricos, demostrando solvencia en la planeación, organización, 
+
+										control y resultados, fortaleciendo los sistemas de ingeniería aplicados a la 
+
+										tecnología existente y a los recursos humanos. <br><br>
+
+										Altos conocimientos en programación de alto nivel, conocimientos avanzados 
+
+										en desarrollo front-end para aplicaciones web y móviles (Html5, Css3, 
+
+										JavaScript, jQuery, Bootstrap, AngularJS, Stylus, Jade), además conocimientos 
+
+										básicos en back-end (nodeJS, RoR, PHP, PostgreSQL) así como el manejo de 
+
+										CMS como WordPress</a>.</p>
+										</div>
+										</div>
+										</div>
+										</div>
+									</section>
+																</div>
+							</div>
+												<div class="column column-3">
+								<div class="column-inner">
+																	<section class="element">
+										<header>
+											<h2>Copyright</h2>
+										</header>
+										
+										<div class="element-body">
+											<p>All work is © 2015 by <a href="http://www.bernierebolledo.com">Bernie Rebolledo<br />
+											</a>Website by <a title="Bernie" href="" target="_blank">Bernie</a></p>
+										</div>
+									</section>
+																</div>
+							</div>
+									</div><!-- columns -->
+			</div>
+		</div>
+	</div><!-- /wrap -->
+	<script type='text/javascript' src='js/jquery.easing.min.js'></script>
+	<script type='text/javascript' src='js/modernizr-2.6.2.js'></script>
+	<script type='text/javascript' src='js/jquery.royalslider.min.js'></script>
+	<script type='text/javascript' src='js/verge.min.js'></script>
+	<script type='text/javascript' src='js/jquery.image-utils.js'></script>
+	<script type='text/javascript' src='js/jquery.viewport.min.js'></script>
+	<script type='text/javascript' src='js/jquery.mousewheel.js'></script>
+	<script type='text/javascript' src='js/jquery.scrollbox.js'></script>
+	<script type='text/javascript' src='js/all.js'></script>
+</body>
+</html>
