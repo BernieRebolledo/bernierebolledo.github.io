@@ -478,7 +478,7 @@ body.inverted .rsDefault .rsCloseVideoIcn:hover {
 .rsDefault .rsPreloader {
 	width:20px;
 	height:20px;
-	background-image:url(../preloaders/preloader-white.gif);
+	background-image:url(../img/loader-black-40.gif);
 
 	left:50%;
 	top:50%;
